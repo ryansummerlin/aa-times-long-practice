@@ -1,1 +1,10 @@
-/* Your code here */
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.nav-list > li {
+    margin: 7px 12px;
+}
