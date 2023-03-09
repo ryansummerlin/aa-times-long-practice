@@ -1,1 +1,104 @@
-/* Your code here */
+.masthead {
+    display: grid;
+    grid-template-areas:
+    "top-left . top-right"
+    "middle-center middle-center middle-center"
+    "bottom-left bottom-center bottom-right";
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+}
+
+.masthead__menu-and-search {
+    align-items: center;
+    display: flex;
+    grid-area: top-left;
+    justify-self: start;
+    padding-left: 20px;
+}
+
+.masthead__actions {
+    align-items: center;
+    display: flex;
+    grid-area: top-right;
+    justify-self: end;
+    padding-top: 12px;
+}
+
+.masthead__technologies {
+    border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    grid-area: middle-center;
+    justify-content: center;
+    width: 100%;
+}
+
+.masthead__date {
+    grid-area: bottom-left;
+    justify-self: start;
+}
+
+.masthead__logo {
+    grid-area: bottom-center;
+    padding-top: 15px;
+}
+
+.masthead__paper {
+    align-items: center;
+    display: flex;
+    grid-area: bottom-right;
+    justify-content: flex-end;
+}
+
+.masthead__buttons {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.masthead__buttons:hover {
+    background-color: #f7f7f5;
+}
+
+button {
+    background-color: #6288a5;
+    border-radius: 3px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: auto 4px;
+    padding: 7px 9px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #326891;
+}
+
+.language-container {
+    background-color: white;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1px;
+}
+
+.language {
+    font-size: 10px;
+    margin: auto 7px;
+    text-transform: uppercase;
+}
+
+.masthead__date, .masthead__paper {
+    align-self: end;
+    font-size: 11px;
+}
+
+.masthead__date, .masthead__logo, .masthead__paper {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 11px;
+    width: 100%;
+}
