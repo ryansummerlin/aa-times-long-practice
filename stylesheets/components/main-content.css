@@ -179,3 +179,28 @@ article p, article ul, .video p {
 .video {
     grid-area: right;
 }
+
+@media screen and (max-width: 1200px) {
+    .right-main {
+        display: none;
+    }
+
+    .left-main {
+        width: 100%;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .interests-bar {
+        display: none;
+    }
+
+    .main-nav {
+        display: none;
+    }
+}
