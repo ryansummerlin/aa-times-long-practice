@@ -11,6 +11,10 @@
   width: 200px;
 }
 
+.pref--hidden {
+  visibility: hidden;
+}
+
 
 .pref__section {
   border-top: 1px solid #dedede;
